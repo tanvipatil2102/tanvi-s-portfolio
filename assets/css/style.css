@@ -677,7 +677,7 @@ h3.my-profession{
 
     .home .home-img{
         margin-top: 40px;
-        
+        margin-left: 20px;
     }
 
     .home .home-img img{
@@ -697,6 +697,7 @@ h3.my-profession{
     }
     .home .home-img img{
         height: 300px;
+
     }
     .home-img::after{
         right: -40px;
