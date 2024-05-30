@@ -6,7 +6,6 @@
     --bg-black-50: #e8dfec;
     --text-black-900: #302e4d;
     --text-black-700: #504e70;
-
 }
 
 *{
@@ -696,71 +695,13 @@ h3.my-profession{
         max-width: 98%;
     }
     .home .home-img{
-        margin-top: 40px;
-        margin-left: 20px;
-    }
-    .home .home-img img{
-        height: 300px;
-
-    }
-    .home-img::after{
-        right: -40px;
-    }
-    .home-img::before{
-        left: -10px;
-    }
-    h3.my-profession{
-        font-size: 20px;
-        margin: 15px 0;
-    }
-
-}
-
-@media all and (max-width: 520px) {
-    .home .home-img{
-        margin-top: 40px;
-        margin-left: 20px;
-    }
-    .home-img::after{
-        right: -70px;
-    }
-    .home-img::before{
-        left: -10px;
-    }
-    h3.my-profession{
-        font-size: 20px;
-        margin: 15px 0;
-    }
-}
-
-@media all and (max-width: 460px) {
-    .home .home-img{
-        margin-top: 40px;
-        margin-left: 20px;
-    }
-    .home-img::after{
-        right: -110px;
-    }
-    h3.my-profession{
-        font-size: 20px;
-        margin: 15px 0;
-    }
-}
-
-@media all and (max-width: 340px) {
-    .home-img::after{
-        right: -100px;
-    }
-    .home .home-img img{
-        height: 250px;
-    }
-    .home .home-img{
-        margin-top: 40px;
-        margin-left: 20px;
-    }
-    h3.my-profession{
-        font-size: 20px;
-        margin: 15px 0;
+        display: none;
     }
     
+    h3.my-profession{
+        font-size: 20px;
+        margin: 15px 0;
+    }
+
 }
+
