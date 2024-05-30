@@ -620,15 +620,7 @@ h3.my-profession{
     transform: rotateY(180deg) scale(1.5);
 }
 
-.tq{
-    text-align: center;
-    color: var(--text-black-700);
-    padding: 20px;
-    font-size: 20px;
-    font-weight: 700;
-    flex: 0 0 100%;
-    background-color: var(--bg-black-900);
-}
+
 
 
 
