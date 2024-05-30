@@ -627,6 +627,7 @@ h3.my-profession{
     font-size: 20px;
     font-weight: 700;
     flex: 0 0 100%;
+    background-color: var(--bg-black-900);
 }
 
 
