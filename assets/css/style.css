@@ -695,6 +695,10 @@ h3.my-profession{
         flex: 0 0 98%;
         max-width: 98%;
     }
+    .home .home-img{
+        margin-top: 40px;
+        margin-left: 20px;
+    }
     .home .home-img img{
         height: 300px;
 
@@ -709,6 +713,10 @@ h3.my-profession{
 }
 
 @media all and (max-width: 520px) {
+    .home .home-img{
+        margin-top: 40px;
+        margin-left: 20px;
+    }
     .home-img::after{
         right: -70px;
     }
@@ -718,6 +726,10 @@ h3.my-profession{
 }
 
 @media all and (max-width: 460px) {
+    .home .home-img{
+        margin-top: 40px;
+        margin-left: 20px;
+    }
     .home-img::after{
         right: -110px;
     }
@@ -729,6 +741,10 @@ h3.my-profession{
     }
     .home .home-img img{
         height: 250px;
+    }
+    .home .home-img{
+        margin-top: 40px;
+        margin-left: 20px;
     }
     
 }
