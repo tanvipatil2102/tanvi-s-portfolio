@@ -84,23 +84,26 @@ let onScroll = (ele) => {
     if(scrollValue < 544){
         anchor1.classList.add("active");
         anchor2.classList.remove("active");
-
+        anchor3.classList.remove("active");
+        anchor5.classList.remove("active");
     }
     else if(scrollValue >= 544 && scrollValue < 1500 ){
-        anchor1.classList.remove("active");
         anchor2.classList.add("active");
-        anchor3.classList.remove("active")
+        anchor1.classList.remove("active");
+        anchor3.classList.remove("active");
+        anchor5.classList.remove("active");
 
     }else if(scrollValue >= 1500 && scrollValue < 3519){
-        anchor2.classList.remove("active");
         anchor3.classList.add("active");
-        anchor5.classList.remove("active")
         anchor1.classList.remove("active");
+        anchor2.classList.remove("active");
+        anchor5.classList.remove("active");
 
     }else if(scrollValue >= 3519){
-        anchor3.classList.remove("active");
         anchor5.classList.add("active");
+        anchor3.classList.remove("active");
         anchor1.classList.remove("active");
+        anchor2.classList.remove("active");
 
     }
 }
