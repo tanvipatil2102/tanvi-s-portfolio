@@ -8,9 +8,13 @@ const navToggler = document.querySelector(".nav-toggler"), aside = document.quer
 const anchor1 = document.getElementById("anchor1");
 const anchor2 = document.getElementById("anchor2");
 const anchor3 = document.getElementById("anchor3");
-const anchor4 = document.getElementById("anchor4");
 const anchor5 = document.getElementById("anchor5");
 const backdrop = document.getElementById("backdrop");
+const name1 = document.getElementById("name").value;
+const email = document.getElementById("email").value;
+const subject = document.getElementById("subject").value;
+const massage = document.getElementById("massage").value;
+const contactForm = document.getElementById("contactForm");
 
 
 
@@ -80,7 +84,6 @@ backdrop.addEventListener("click", asideSectionBtn)
 
 let onScroll = (ele) => {
     let scrollValue = window.scrollY;
-    console.log(scrollValue);
     if(scrollValue < 544){
         anchor1.classList.add("active");
         anchor2.classList.remove("active");
@@ -108,5 +111,29 @@ let onScroll = (ele) => {
     }
 }
 
+var body = "Name:" + name1 + "<br/> Email:" + email + "<br/> Subject:" + subject +"<br/> Message:" + massage;
+
+
+const onSubmitBtn = (eve) => {
+    eve.preventDefault()
+    console.log("event binded");
+    Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "tanvi6829@gmail.com",
+        Password : "04D98AF6D6E942A87E7A9B482B690719F3F9",
+        To : 'tanvi6829@gmail.com',
+        From : 'tanvi6829@gmail.com',
+        Subject : "For enquiry",
+        Body : body
+    }).then(
+      message => alert(message)
+    );
+    contactForm.reset();
+}
+
+
+
+
+contactForm.addEventListener("submit", onSubmitBtn)
 window.addEventListener("scroll", onScroll);
 
